@@ -68,8 +68,13 @@ class ProjectInit extends Command
             ]
         );
 
-        if (!$admin->hasRole('admin')) {
-            $admin->assignRole($role);
+        if (method_exists($admin, 'hasRole')) {
+            if (!$admin->hasRole('admin')) {
+                $admin->assignRole($role);
+            }
+        } else {
+            $this->warn('Notice: HasLaravelAuth trait not yet detected on User model.');
+            $this->warn('Add HasLaravelAuth to App\Models\User and re-run php artisan app:project-init to assign the admin role.');
         }
 
         $this->info('Admin user created successfully!');
