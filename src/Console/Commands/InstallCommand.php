@@ -52,13 +52,7 @@ class InstallCommand extends Command
             '--force' => true,
         ]);
 
-        // 4. Publish Spatie Permission migrations if not yet published
-        $this->info('Checking Spatie permission migrations...');
-        $this->callSilent('vendor:publish', [
-            '--provider' => 'Spatie\Permission\PermissionServiceProvider',
-        ]);
-
-        // 5. Run migrations
+        // 4. Run migrations
         $this->info('Running database migrations...');
         $this->call('migrate', ['--force' => true]);
 
