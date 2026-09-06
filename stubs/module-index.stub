@@ -1,0 +1,53 @@
+@push('title')
+    {{MODULE_NAME}}
+@endpush
+<x-app-layout>
+    @can('create_{{MODULE_KEY}}')
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills flex-column flex-sm-row mb-4">
+                    <li class="nav-item mr-1">
+                        <a class="btn btn-success" href="{{ route('{{MODULE_NAME_LOWER}}s.create') }}">
+                            <i class='bx bxs-add-to-queue'></i> Add {{MODULE_NAME}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    @endcan
+    
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">{{MODULE_NAME}}</h5>
+        </div>
+        <div class="card-body">
+
+
+            <div class="table-responsive text-wrap">
+
+                <table class="table table-striped table-borderless">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Created By</th>
+                            <th>Updated By</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+
+                <div class="mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#success-alert").fadeTo(5000, 500).slideUp(500, function() {
+            $("#success-alert").slideUp(500);
+        });
+    </script>
+</x-app-layout>

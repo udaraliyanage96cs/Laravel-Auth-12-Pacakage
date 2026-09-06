@@ -1,0 +1,415 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Custom Table, Card & Button Styles */
+.custom-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.03);
+  background: #ffffff;
+}
+
+.custom-table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.custom-table thead th {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-bottom: 1px solid #334155;
+  border-top: none;
+  white-space: nowrap;
+}
+
+.app-brand-text.demo {
+  color: #39da8a !important;
+}
+
+.custom-table tbody tr {
+  transition: background-color 0.15s ease-in-out;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.custom-table tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.875rem;
+}
+
+.custom-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.user-id-text {
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.badge-service {
+  background-color: #7C82C8 !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 0.725rem;
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 6px;
+  border: none;
+}
+
+.status-badge-approved {
+  background-color: #34C9A0 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.725rem;
+  padding: 4px 12px;
+  display: inline-block;
+  border-radius: 6px;
+  border: none;
+}
+
+.status-badge-pending {
+  background-color: #F5A623 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.725rem;
+  padding: 4px 12px;
+  display: inline-block;
+  border-radius: 6px;
+  border: none;
+}
+
+.status-badge-deleted {
+  background-color: #F07070 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.725rem;
+  padding: 4px 12px;
+  display: inline-block;
+  border-radius: 6px;
+  border: none;
+}
+
+.bg-label-info {
+  background-color: #34C9A0 !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+}
+
+.bg-label-primary {
+  background-color: #7C82C8 !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+}
+
+.bg-label-success {
+  background-color: #34C9A0 !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+}
+
+.bg-label-warning {
+  background-color: #F5A623 !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+}
+
+.bg-label-danger {
+  background-color: #F07070 !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+}
+
+.btn-icon-square {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.btn-action-teal {
+  background-color: #0d9488;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-action-teal:hover {
+  background-color: #0f766e;
+  color: #ffffff;
+}
+
+.table-footer-text {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* Sidebar Navigation Comprehensive Theme Overrides */
+.light-style .bg-menu-theme.menu-vertical,
+.dark-style .bg-menu-theme.menu-vertical,
+.bg-menu-theme.menu-vertical,
+.menu-vertical {
+  background-color: #0f172a !important;
+}
+
+/* Open menu item containers & submenus */
+.light-style .bg-menu-theme .menu-inner > .menu-item.open,
+.light-style .bg-menu-theme .menu-inner > .menu-item.open > .menu-link,
+.light-style .bg-menu-theme .menu-item.open,
+.light-style .bg-menu-theme .menu-item.open > .menu-link,
+.light-style .bg-menu-theme .menu-sub,
+.light-style .bg-menu-theme .menu-inner > .menu-item .menu-sub,
+.bg-menu-theme .menu-inner > .menu-item.open,
+.bg-menu-theme .menu-sub {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Default state for menu links & toggles */
+.light-style .bg-menu-theme .menu-link,
+.dark-style .bg-menu-theme .menu-link,
+.bg-menu-theme .menu-link {
+  color: #cbd5e1 !important;
+  background-color: transparent !important;
+}
+
+/* Open menu toggle text color */
+.light-style .bg-menu-theme .menu-item.open > .menu-link,
+.bg-menu-theme .menu-item.open > .menu-link {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Hover state for links */
+.light-style .bg-menu-theme .menu-link:hover,
+.dark-style .bg-menu-theme .menu-link:hover,
+.bg-menu-theme .menu-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Submenu items normal & hover states */
+.light-style .bg-menu-theme .menu-sub .menu-link,
+.dark-style .bg-menu-theme .menu-sub .menu-link,
+.bg-menu-theme .menu-sub .menu-link {
+  color: #94a3b8 !important;
+  background-color: transparent !important;
+}
+
+.light-style .bg-menu-theme .menu-sub .menu-link:hover,
+.dark-style .bg-menu-theme .menu-sub .menu-link:hover,
+.bg-menu-theme .menu-sub .menu-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Active Menu Items Logic */
+.light-style .bg-menu-theme .menu-inner > .menu-item.active,
+.light-style .bg-menu-theme .menu-sub > .menu-item.active,
+.light-style.layout-menu-collapsed .bg-menu-theme .menu-inner > .menu-item.active,
+.layout-menu-collapsed .bg-menu-theme .menu-inner > .menu-item.active {
+  background-color: transparent !important;
+}
+
+/* Standalone parent menu items & child sub-menu items (always green when active) */
+.light-style .bg-menu-theme .menu-inner > .menu-item.active > .menu-link:not(.menu-toggle),
+.dark-style .bg-menu-theme .menu-inner > .menu-item.active > .menu-link:not(.menu-toggle),
+.bg-menu-theme .menu-inner > .menu-item.active > .menu-link:not(.menu-toggle),
+.light-style .bg-menu-theme .menu-sub > .menu-item.active > .menu-link,
+.dark-style .bg-menu-theme .menu-sub > .menu-item.active > .menu-link,
+.bg-menu-theme .menu-sub > .menu-item.active > .menu-link {
+  color: #ffffff !important;
+  background-color: #39da8a !important;
+  background: #39da8a !important;
+  box-shadow: 0 2px 6px 0 rgba(57, 218, 138, 0.4) !important;
+  border-radius: 6px !important;
+}
+
+/* In Full-size sidebar: Do NOT highlight parent menu toggle in green */
+/* layout-menu-collapsed is placed on the .layout-wrapper div by Sneat JS, not on html/body */
+.layout-wrapper:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner > .menu-item > .menu-link.menu-toggle,
+.layout-wrapper:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner > .menu-item.active > .menu-link.menu-toggle {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #cbd5e1 !important;
+}
+
+.layout-wrapper:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner > .menu-item > .menu-link.menu-toggle:hover,
+.layout-wrapper:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner > .menu-item.active > .menu-link.menu-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  color: #ffffff !important;
+}
+
+/* In Reduced/Collapsed sidebar mode: Highlight active parent item in green */
+.layout-menu-collapsed:not(.layout-menu-hover):not(.layout-menu-expanded) .bg-menu-theme .menu-inner > .menu-item.active {
+  background-color: #39da8a !important;
+  border-radius: 6px !important;
+}
+
+.layout-menu-collapsed:not(.layout-menu-hover):not(.layout-menu-expanded) .bg-menu-theme .menu-inner > .menu-item.active .menu-link {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  box-shadow: 0 2px 6px 0 rgba(57, 218, 138, 0.4) !important;
+}
+
+.light-style .bg-menu-theme .menu-sub > .menu-item.active > .menu-link:not(.menu-toggle):before {
+  background-color: #ffffff !important;
+}
+
+.menu-header-text {
+  color: #64748b !important;
+}
+
+/* Modern Sleek Tooltip Styling */
+.tooltip .tooltip-inner {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important;
+  letter-spacing: 0.02em !important;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+  border-top-color: #0f172a !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  border-bottom-color: #0f172a !important;
+}
+.tooltip.bs-tooltip-start .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+  border-left-color: #0f172a !important;
+}
+.tooltip.bs-tooltip-end .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+  border-right-color: #0f172a !important;
+}
+
+/* Active Stepper Green Override - ONLY active step is green */
+.bs-stepper .step.active .bs-stepper-circle {
+  background-color: #39da8a !important;
+  color: #ffffff !important;
+  box-shadow: 0 0.125rem 0.4rem rgba(57, 218, 138, 0.4) !important;
+}
+
+.bs-stepper .step.active .bs-stepper-label,
+.bs-stepper .step.active .bs-stepper-title {
+  color: #39da8a !important;
+}
+
+.bs-stepper .step.active .bs-stepper-icon svg {
+  fill: #39da8a !important;
+}
+
+.bs-stepper .step.active .step-trigger::after {
+  background-color: #39da8a !important;
+}
+
+/* Ensure crossed/previous steps remain neutral grey (not green) */
+.bs-stepper .step.crossed:not(.active) .bs-stepper-circle,
+.bs-stepper .step.crossed:not(.active) .step-trigger .bs-stepper-circle {
+  border-color: #d4d8dd !important;
+  color: #516377 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.bs-stepper .step.crossed:not(.active) .bs-stepper-label,
+.bs-stepper .step.crossed:not(.active) .bs-stepper-title {
+  color: #677788 !important;
+}
+
+.bs-stepper .step.crossed:not(.active) .bs-stepper-icon svg {
+  fill: #677788 !important;
+}
+
+/* Checked Checkbox & Radio Green Override */
+.form-check-input:checked,
+.form-check-input[type=checkbox]:checked,
+.form-check-input[type=radio]:checked {
+  background-color: #39da8a !important;
+  border-color: #39da8a !important;
+}
+
+.form-check-input:focus {
+  border-color: #39da8a !important;
+  box-shadow: 0 0 0 0.25rem rgba(57, 218, 138, 0.2) !important;
+}
+
+/* Bootstrap Daterangepicker – Mint Teal System Theme Overrides */
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker td.active:not(.off),
+.daterangepicker td.active:not(.off):hover,
+.daterangepicker td.start-date,
+.daterangepicker td.start-date:hover,
+.daterangepicker td.end-date,
+.daterangepicker td.end-date:hover,
+.daterangepicker .start-date:not(.off),
+.daterangepicker .end-date:not(.off),
+.daterangepicker .start-date:not(.end-date):not(.off),
+.daterangepicker .end-date:not(.start-date):not(.off),
+.daterangepicker .start-date:not(.end-date):not(.off):hover,
+.daterangepicker .end-date:not(.start-date):not(.off):hover {
+  background: #39da8a !important;
+  background-color: #39da8a !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(57, 218, 138, 0.35) !important;
+}
+
+.daterangepicker td.in-range,
+.daterangepicker td.in-range:hover,
+.daterangepicker td.in-range:not(.start-date):not(.end-date),
+.daterangepicker td.in-range:not(.start-date):not(.end-date):not(.off),
+.daterangepicker td.in-range:not(.active) {
+  background: rgba(57, 218, 138, 0.15) !important;
+  background-color: rgba(57, 218, 138, 0.15) !important;
+  color: #065f46 !important;
+}
+
+html:not([dir=rtl]) .daterangepicker td.start-date:not(.end-date),
+.daterangepicker td.start-date {
+  border-radius: 7px 0 0 7px !important;
+}
+
+html:not([dir=rtl]) .daterangepicker td.end-date:not(.start-date),
+.daterangepicker td.end-date {
+  border-radius: 0 7px 7px 0 !important;
+}
+
+.daterangepicker td.start-date.end-date {
+  border-radius: 7px !important;
+}
+
+.daterangepicker .ranges li.active {
+  background: #39da8a !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.daterangepicker .applyBtn {
+  background: #39da8a !important;
+  border-color: #39da8a !important;
+  color: #ffffff !important;
+}
+
